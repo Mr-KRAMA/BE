@@ -1,0 +1,24 @@
+# The codes 1,2,3 of HPC
+
+g++ -fopenmp HPC_1_BFSDFS.cpp -o HPC_1 (change name fro HPC_1-> HPC_2/3 acccordingly, This is compiling step)
+./HPC_1 (to run the prac)
+
+#HPC-> prac 4 
+(if cllg dont have nvidia setup, we can use google collab,download wxtension on vs code of google.com,signup with ur account select GPU T4, then create a .ipynb file,
+
+in the file in cell just starting should be 
+
+%%writefile HPC_4_Matrix.cu 
+
+and from next line whole code.)
+
+(next cell run the following commands)
+
+!nvcc HPC_4_Matrix.cu -o HPC_4_Matrix
+!./HPC_4_Matrix
+
+
+
+
+----------DL------------------
+Just press run cell everytime or run all
